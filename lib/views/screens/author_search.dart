@@ -59,7 +59,16 @@ class AuthorSearchForm extends StatelessWidget {
                   child: Text('Error: ${state.message}'),
                 );
               } else {
-                return Container();
+                return Center(
+                  child: Text(
+                    'Welcome to Author Search App',
+                    style: TextStyle(
+                      color: AppColors.getSecondaryColor(),
+                      fontSize: 15.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                );
               }
             },
           ),
